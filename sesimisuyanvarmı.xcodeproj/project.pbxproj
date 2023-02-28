@@ -14,6 +14,8 @@
 		DDB0DF2129A91BA7007F2DE8 /* sesimisuyanvarm_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB0DF2029A91BA7007F2DE8 /* sesimisuyanvarm_Tests.swift */; };
 		DDB0DF2B29A91BA7007F2DE8 /* sesimisuyanvarm_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB0DF2A29A91BA7007F2DE8 /* sesimisuyanvarm_UITests.swift */; };
 		DDB0DF2D29A91BA7007F2DE8 /* sesimisuyanvarm_UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB0DF2C29A91BA7007F2DE8 /* sesimisuyanvarm_UITestsLaunchTests.swift */; };
+		DDB0DF3B29AA627C007F2DE8 /* deprem.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DDB0DF3A29AA627B007F2DE8 /* deprem.mp3 */; };
+		DDB0DF3D29AA8FDA007F2DE8 /* playsound.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB0DF3C29AA8FDA007F2DE8 /* playsound.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		DDB0DF2629A91BA7007F2DE8 /* sesimisuyanvarmıUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sesimisuyanvarmıUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDB0DF2A29A91BA7007F2DE8 /* sesimisuyanvarm_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sesimisuyanvarm_UITests.swift; sourceTree = "<group>"; };
 		DDB0DF2C29A91BA7007F2DE8 /* sesimisuyanvarm_UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sesimisuyanvarm_UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DDB0DF3A29AA627B007F2DE8 /* deprem.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = deprem.mp3; sourceTree = "<group>"; };
+		DDB0DF3C29AA8FDA007F2DE8 /* playsound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playsound.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +98,13 @@
 		DDB0DF0E29A91BA5007F2DE8 /* sesimisuyanvarmı */ = {
 			isa = PBXGroup;
 			children = (
+				DDB0DF3A29AA627B007F2DE8 /* deprem.mp3 */,
+				DDB0DF3929A9F750007F2DE8 /* sounds */,
 				DDB0DF0F29A91BA5007F2DE8 /* sesimisuyanvarm_App.swift */,
 				DDB0DF1129A91BA5007F2DE8 /* ContentView.swift */,
 				DDB0DF1329A91BA6007F2DE8 /* Assets.xcassets */,
 				DDB0DF1529A91BA6007F2DE8 /* Preview Content */,
+				DDB0DF3C29AA8FDA007F2DE8 /* playsound.swift */,
 			);
 			path = "sesimisuyanvarmı";
 			sourceTree = "<group>";
@@ -125,6 +132,13 @@
 				DDB0DF2C29A91BA7007F2DE8 /* sesimisuyanvarm_UITestsLaunchTests.swift */,
 			);
 			path = "sesimisuyanvarmıUITests";
+			sourceTree = "<group>";
+		};
+		DDB0DF3929A9F750007F2DE8 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDB0DF1729A91BA6007F2DE8 /* Preview Assets.xcassets in Resources */,
+				DDB0DF3B29AA627C007F2DE8 /* deprem.mp3 in Resources */,
 				DDB0DF1429A91BA6007F2DE8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +274,7 @@
 			files = (
 				DDB0DF1229A91BA5007F2DE8 /* ContentView.swift in Sources */,
 				DDB0DF1029A91BA5007F2DE8 /* sesimisuyanvarm_App.swift in Sources */,
+				DDB0DF3D29AA8FDA007F2DE8 /* playsound.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,9 +447,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "dene.sesimisuyanvarm-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -459,9 +478,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "dene.sesimisuyanvarm-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
